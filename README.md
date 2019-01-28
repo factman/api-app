@@ -2,7 +2,7 @@
 
 1. Clone the Repo
 
-> git clone url
+> git clone https://github.com/factman/api-app.git
 
 2. Install Dependencies
 
