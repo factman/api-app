@@ -1,0 +1,111 @@
+doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd
+html(xmlns="http://www.w3.org/1999/xhtml")
+    head
+        meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+        <!--[if !mso]><!-->
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        <!--<![endif]-->
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/css/mailStyle.css")
+        title
+        <!--[if (gte mso 9)|(IE)]>
+        style(type="text/css").
+            table {border-collapse: collapse;}
+        <![endif]-->
+    body
+        center.wrapper
+            .webkit
+                <!--[if (gte mso 9)|(IE)]>
+                | <table width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+                | <tr>
+                | <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                <![endif]-->
+                table.outer(align="center")
+                    tbody
+                        tr
+                            td.right-sidebar.black-bg(dir="ltr")
+                                <!--[if (gte mso 9)|(IE)]>
+                                | <table width="100%" dir="rtl" style="border-spacing:0;font-family:sans-serif;color:#333333;"><tr>
+                                | <td width="100" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                                <![endif]-->
+                                div(class="column left" dir="rtl" style="width:100%;display:inline-block;vertical-align:middle;max-width:150px;")
+                                    table(width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;")
+                                        tbody
+                                            tr
+                                                td.inner.contents
+                                                    a(href="{{url('/')}}" style="text-decoration:underline;color:#70bbd9;")
+                                                        img(src="{{url('/images/logo.png')}}" width="130" alt="" style="border-width:0;")
+                                <!--[if (gte mso 9)|(IE)]>
+                                | </td><td width="500" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                                <![endif]-->
+                                div.column.right(dir="rtl")
+                                    table(width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;")
+                                        tbody
+                                            tr
+                                                td.inner.contents
+                                                    h2.white-color Uncle Vinnies ...taste is in the grill
+                                            
+                                <!--[if (gte mso 9)|(IE)]>
+                                | </td>
+                                | </tr>
+                                | </table>
+                                <![endif]-->
+                        block content
+                        tr
+                            td.one-column
+                                table(width="100%" class="black-bg" style="border-spacing:0;font-family:sans-serif;color:#333333;background-color:#323232;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;")
+                                    tbody
+                                        tr
+                                            td.inner.contents.center
+                                                p(style="Margin:0;font-size:18px;font-weight: bold; color:#ee6a56;") New Arrival
+                        tr
+                            td.three-column
+                                <!--[if (gte mso 9)|(IE)]>
+                                | <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+                                | <tr>
+                                <![endif]-->
+                                each item in [{_id: 1, title: "New Arrival 1", description: "Description 1", thumbnail: "http://unsplash.it/360/300/?random"},{_id: 1, title: "New Arrival 2", description: "Description 2", thumbnail: "http://unsplash.it/360/300/?random"},{_id: 1, title: "New Arrival 3", description: "Description 3", thumbnail: "http://unsplash.it/360/300/?random"}]
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    | <td width="200" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                                    <![endif]-->
+                                    diV.column
+                                        table(width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;")
+                                            tbody
+                                                tr
+                                                    td.inner
+                                                        table.contents(style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:center;")
+                                                            tbody
+                                                                tr
+                                                                    td.inner
+                                                                        a(href="#" style="color:#ee6a56;text-decoration:none;")
+                                                                            img(src=item.thumbnail width="180" alt="" style="border-width:0;")
+                                                                tr
+                                                                    td.text.inner
+                                                                        p.h3b
+                                                                            a(href="#" style="color:#ee6a56;text-decoration:none;") #{item.title}
+                                                                        p(style="Margin:0;") #{item.description}
+
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    | </td>
+                                    <![endif]-->
+                                <!--[if (gte mso 9)|(IE)]>
+                                | </tr>
+                                | </table>
+                                <![endif]-->
+                        tr
+                            td.one-column
+                                table(width="100%" class="black-bg" style="border-spacing:0;font-family:sans-serif;color:#333333;background-color:#323232;background-image:none;background-repeat:repeat;background-position:top left;background-attachment:scroll;")
+                                    tbody
+                                        tr
+                                            td.inner.contents.center
+                                                p(style="Margin:0;font-size:14px;Margin-bottom:10px;text-align: center")
+                                                    a(href="#" style="color:#ee6a56;text-decoration:underline;") Create Account
+                                                    | &nbsp;&nbsp;&nbsp;&nbsp;
+                                                    a(href="#" style="color:#ee6a56;text-decoration:underline;") View All menu
+                                                    | &nbsp;&nbsp;&nbsp;&nbsp;
+                                                    a(href="#" style="color:#ee6a56;text-decoration:underline;") View Blog
+                <!--[if (gte mso 9)|(IE)]>
+                | </td>
+                | </tr>
+                | </table>
+                <![endif]-->
